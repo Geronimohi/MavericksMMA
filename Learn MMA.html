@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Learn MMA</title>
+  <link rel="icon" type="image/x-icon" href="Mavericks.ico" />
+  <link rel="stylesheet" href="LEARN CSS.css" />
+</head>
+
+<body>
+  <div class="topnav">
+	<img
+      src="image/Mavericks.ico"
+      style="float: left; height: 40px; width: 40px; padding: 10px"
+    />
+    <a href="index.html" style="padding-left:3%">Home</a>
+    <a href="Learn MMA.html" style="padding-left: 3%">Learn MMA</a>
+    <a href="history.html" style="padding-left: 3%">History</a>
+    <a href="about2.html" style="padding-left: 3%">About</a>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img
+        src="https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        style="width: 100%; height: 420px"
+      />
+      <div class="text">LEARN BASIC STRIKING</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img
+        src="https://cdn.create.vista.com/api/media/small/250728184/stock-photo-shirtless-muscular-mma-fighter-boxing-gloves-kicking-another-knee"
+        style="width: 100%; height: 420px"
+      />
+      <div class="text">LEARN ADVANCED STRIKING</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img
+        src="https://st2.depositphotos.com/5667372/8706/i/450/depositphotos_87060300-stock-photo-wrestler-performs-a-throw-isolated.jpg"
+        style="width: 100%; height: 420px"
+      />
+      <div class="text">LEARN GRAPPLING</div>
+    </div>
+  </div>
+  <div style="width: 49%; height: 425px; float: right">
+    <h1>FUNDAMENTALS OF FIGHTING</h1>
+    <p>
+      Mixed Martial Arts (MMA) is a combat sport that demands a unique blend of
+      skills, combining elements from various fighting disciplines into a
+      singular, dynamic battlefield. In the cage, fighters face a multitude of
+      challenges, from striking to grappling, and everything in between. To
+      excel in this intense and physically demanding sport, one must grasp the
+      essential fundamentals of fighting specific to MMA. Join us as we delve
+      into the intricacies of MMA combat, exploring the core principles and
+      techniques that make champions in this unforgiving arena. Whether you're a
+      seasoned fighter, an aspiring athlete, or a passionate spectator,
+      understanding the fundamentals is the first step in unlocking the secrets
+      to success in MMA.
+    </p>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="card" style="margin-left: 2%">
+    <a href="Basic Striking.html">Basic Striking</a>
+    <img src="https://i.gifer.com/7Gsx.gif" style="width: 100%" />
+    <div class="learn2">
+      Footwork, Movement, Breathing and Basics to using your fists.
+    </div>
+  </div>
+
+  <div class="card" style="margin-left: 3%">
+    <a href="Advanced Striking.html">Advanced Striking</a>
+    <img
+      src="https://media.tenor.com/5fyo7Ouf5GcAAAAC/crane-crane-kick.gif"
+      style="width: 100%"
+    />
+    <div class="learn2">
+      Feints, Head Movement, Setups, Clever Positioning and Kicks
+    </div>
+  </div>
+
+  <div class="card" style="margin-right: 1%; margin-left: 2%">
+    <a href="Grappling.html">Grappling</a>
+    <img
+      src="https://media.tenor.com/kdI2jz_Sw-AAAAAC/mighty-mouse-demetrious.gif"
+      style="width: 100%"
+    />
+    <div class="learn2">
+      Takedowns, Positions, Hand Grips, Ground-and-pound, and Submissions
+    </div>
+  </div>
+</body>
+
+<script>
+  let slideIndex = 0
+  showSlides()
+
+  function showSlides() {
+    let i
+    let slides = document.getElementsByClassName("mySlides")
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"
+    }
+    slideIndex++
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block"
+    setTimeout(showSlides, 5000)
+  }
+</script>

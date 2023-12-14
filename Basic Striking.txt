@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+<title>Learn MMA</title>
+<link rel="icon" type="image/Mavericks.ico" href="Mavericks.ico">
+<link rel="stylesheet" href="LEARN CSS.css">
+</head>
+
+<body>
+<div class="topnav">
+  <a href="Learn MMA.html">Learn MMA</a>
+  <a href="Basic Striking.html" style="padding-left:3%;">Learn MMA</a>
+  <a href="#ONE" style="padding-left:3%;">History</a>
+  <a href="#BELL" style="padding-left:3%;">About</a>
+  <img src="image/Mavericks.ico" style="float:right;height:40px;width:40px;padding:10px;">
+</div>

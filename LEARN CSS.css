@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,600;0,700;0,800;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+.topnav {
+	background-color: #ebebeb;
+	overflow-x: hidden;
+ }
+ 
+h1 {
+font-family: 'Poppins', sans-serif;
+font-size: 35px;
+text-align: left;
+color:#940000;
+}
+
+.warning {
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color:#940000;
+	padding-top:80px;
+	padding-left: 20px;
+}
+
+p {
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+text-align: left;
+color: #a3a3a3;
+line-height: 1.5;
+}
+ 
+.learn a{
+font-family: 'Poppins', sans-serif;
+font-size: 35px;
+text-align: center;
+color: #dbdbdb;
+background-color: #660000;
+}
+
+.learn2	{
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+text-align: left;
+color: #171717;
+background-color: #dbdbdb;
+}
+
+.card	{
+	width: 30%; 
+	float: left; 
+	border: 3px solid white; 
+	background-color: #171717
+}
+
+.card a	{
+	float:left;
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	text-align: center;
+	color: #dbdbdb;
+	background-color: #660000;
+	width:100%;
+}
+
+.card a:hover{
+	background-color: #e82c2c;
+	color: #d1d1d1;
+}
+ 
+.topnav a {
+	float: left;
+	padding: 14px 14px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	color: #212121;
+}
+
+.topnav a:hover {
+	color: #636363;
+}
+
+body {
+	width: 100%;
+	background-color: #171717
+}	
+
+.slideshow-container {
+	width: 50%;
+	position: relative;
+	margin: auto;
+	float: left;
+}
+
+.slideshow {
+	width: 50%;
+	position: relative;
+	margin: auto;
+	float: right;
+}
+
+.mySlides {
+	display: none;
+}
+//*.img1{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+	padding-top:100px;
+}
+.img1:hover{
+	-webkit-filter: grayscale(0%); 
+	filter: grayscale(0%);
+}*/
+.text {
+	color: #ebebeb;
+	font-size: 33px;
+	font-family: 'Poppins', sans-serif;
+	top: 16px;
+	left: 16px;
+	position: absolute;
+	width: 100%;
+}
+
+.text1 {
+	color: #ebebeb;
+	font-size: 33px;
+	font-family: 'Poppins', sans-serif;
+	top: 16px;
+	right: 16px;
+	position: absolute;
+	width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

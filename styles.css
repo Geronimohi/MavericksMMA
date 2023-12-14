@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,600;0,700;0,800;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+.hero-section{
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/khabib-poirier-242-hero_0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header{
+  position: fixed;
+  top: 0; left: 0;  right: 0;
+  background: rgba(46, 42, 42, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  padding: .5px 4%;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  text-decoration: none;
+}
+header .navbar ul{
+  list-style: none;
+}
+header .navbar ul li{
+  text-decoration: none;
+  position: relative;
+  float: left;
+}
+header .navbar ul li a{
+  font-size: 16px;
+  padding: 15px;
+  color: aliceblue;
+  display: block;
+}
+header .navbar ul li a:hover{
+  background: black;
+  color: white;
+}
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 166px;
+  background: rgba(46, 42, 42, 0.8);
+  display: none;
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+.more-nav{
+  position:absolute;
+  width: 200px;
+  display: none;
+}
+.more-nav li{
+  width: 100%;
+  border-top: .5px solid black;
+}
+.more-nav li ul{
+  left: 200px;
+  top: 0;
+}
+.more-nav:hover > ul{
+  display: initial;
+}
+.content-flexer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.heading-h2{
+  display: inline-block;
+  width: 30%;
+  margin-left: 70px;
+  color: #F4CFCF;
+  text-shadow: 2px 4px 10px #090101;
+}
+.button1{
+  margin-top: 4px;
+  margin-left: 70px;
+  font-size: 12.5px;
+  position: relative;
+  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: .05em;
+  font-weight: 700;
+  padding: 3px 5px;
+  transition: 0.5s;
+}
+.button1:hover{
+  letter-spacing: .13em;
+  background: var(--clr);
+  color:var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+.button1:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: rgb(26, 24, 23);
+}
+.button1 span{
+  position: relative;
+  z-index: 1;
+}
+.button1 i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.button1 i::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: black ;
+  transform: translateX(-50%) skewX(325deg);
+  transition: .5s;
+}
+.button1:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.button1 i::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: black ;
+  transform: translateX(-50%) skewX(325deg);
+  transition: .5s;
+}
+.button1:hover i::after{
+    width: 20px;
+    left: 80%;
+}
+.button-div{
+  display: block;
+
+}
+.fight-span{
+  color: #EF9B25;
+}
+.fighter-names{
+  color: rgb(253, 222, 235, .9);
+  display: inline-block;
+  margin-right: 20px;
+  width: 30%;
+  font-size: 17px;
+  text-shadow: 2px 4px 10px #090101;
+}
+.section-blur{
+  width: 100%;
+  height: 5vh;
+  background-color: #090101;
+  opacity: .99;
+}
+.events-section{
+  width: 100%;
+  height: 70vh;
+  background-color: #090101;
+}
+.events-container{
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+}
+.events-header{
+  color: #FDDDEA;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.onefc-events{
+  color: aliceblue;
+  margin-left: 3%;
+  width: 33.3%;
+  height: 350px;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 99.99%, rgba(167, 163, 163, 0.00) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.onefc-eventsName{
+  margin-top: 30px;
+  font-size: 24px;
+}
+.ufc-events{
+  color: aliceblue;
+  display: inline-block;
+  margin-left: 3%;
+  width: 33.3%;
+  height: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 99.99%, rgba(167, 163, 163, 0.00) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.ufc-eventsName{
+  margin-top: 30px;
+  font-size: 28px;
+}
+.belator-events{
+  color: aliceblue;
+  display: inline-block;
+  margin-left: 3%; 
+  margin-right: 3%; 
+  width: 33.3%;
+  height: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 99.99%, rgba(167, 163, 163, 0.00) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.belator-eventsName{
+  margin-top: 30px;
+  font-size: 25px;
+}
+.news-section{
+  width: 100%;
+  height: 85vh;
+  background-color: #090101;
+}
+.viewmore-button{
+  background-color: #090101;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 50px;
+}
+.news-header{
+  color: antiquewhite;
+  font: bold;
+  font-size: 22px;
+  margin-left: 2%;
+}
+.news-container1 {
+  display: flex;
+  background-color: #090101;
+  width: 100%;
+}
+.news-textheading {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.news-heading, .news-text {
+  color: rgb(255, 255, 255);
+  width: 96%;
+  box-sizing: border-box;
+  align-items: center; 
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.news-text{
+  margin-left: 22px;
+  font-size: 11px; 
+}
+.news-heading{
+  color: #EF9B25;
+}
+.news-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: right; 
+}
+.news-image {
+  max-width: 100%;
+  height: 72vh;
+}
+.new-sectionnews{
+  width: 100%;
+  height: 4vh;
+  background-color: rgb(19, 17, 19);
+}
+.viewmore-buttondiv{
+  width: 100%;
+  height: 9vh;
+  background-color: #090101;
+  justify-content: center;
+  text-align: center;
+}
+.button-div2{
+  margin-right: 3.5%;
+}
+#menu-bar{
+  display: none;
+}
+header label{
+  font-size: 15px;
+  color: #F4CFCF;
+  cursor: pointer;
+  display: none;
+}
+@media(max-width:740px){
+  header{
+    padding: 20px;
+  }
+  header label{
+    display: initial;
+  }
+  header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    display: none;
+  }
+  header .navbar ul li{
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li{
+    background: rgba(0, 0, 0, .1);
+  }
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0 ;
+  }
+  #menu-bar:checked ~ .navbar{
+     display: initial;
+  }
+  .fighter-names h2{
+    font-size: 18px;
+  }
+  .news-text h3{
+    font-size: 8px;
+  }
+}
+@media(max-width:450){
+  .heading-h2{
+    font-size: 14px;
+  }
+  .fighter-names h2{
+    font-size: 14px;
+  }
+  .news-text h3{
+    font-size: 1px;
+  }
+}
+@media(max-width:380){
+  .heading-h2{
+    font-size: 10px;
+  }
+  .fighter-names h2{
+    font-size: 10px;
+  }
+  .news-text h3{
+    font-size: 1%;
+    margin-right: 2px;
+  }
+}
+
+
+
+
+
+
+
+
